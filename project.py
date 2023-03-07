@@ -1,5 +1,3 @@
-# MadLibs
-
 import random
 
 story = input("Choose the story 1, 2 or 3. If you can't decide which story to choose, input 0 for a random story: ")
@@ -86,7 +84,9 @@ def choice (story):
     elif story == '3':
         print(template3())
 
-if story == '0':
+if story == 0:
     stories = ['1', '2', '3']
     rand = random.choice(stories)
     choice(rand)
+else:
+    choice(story)
