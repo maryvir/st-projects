@@ -84,7 +84,7 @@ def choice (story):
     elif story == '3':
         print(template3())
 
-if story == 0:
+if story == '0':
     stories = ['1', '2', '3']
     rand = random.choice(stories)
     choice(rand)
